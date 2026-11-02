@@ -2,6 +2,7 @@
 import streamlit as st
 import requests
 import pandas as pd
+import os
 
 # --------------------------------
 # Page configuration
@@ -13,7 +14,9 @@ st.set_page_config(
     layout="wide"
 )
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = os.getenv(
+    "API_URL",
+    "http://127.0.0.1:8000/predict")
 
 st.title("🚗 Used Car Price Prediction")
 st.write("Predict the selling price of used cars using XGBoost.")
