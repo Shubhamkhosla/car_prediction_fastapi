@@ -1,0 +1,28 @@
+{
+  "numerical_features": [
+    "vehicle_age",
+    "km_driven",
+    "mileage",
+    "engine",
+    "max_power",
+    "seats"
+  ],
+  "categorical_features": [
+    "brand",
+    "seller_type",
+    "fuel_type",
+    "transmission_type"
+  ],
+  "input_features": [
+    "brand",
+    "vehicle_age",
+    "km_driven",
+    "seller_type",
+    "fuel_type",
+    "transmission_type",
+    "mileage",
+    "engine",
+    "max_power",
+    "seats"
+  ]
+}
